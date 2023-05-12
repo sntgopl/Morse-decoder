@@ -27,4 +27,7 @@ def decoder(string)
     '-.--' => 'Y', 
     '--..' => 'Z'
 } 
+
+def self.decode_char(morse_char)
+  morse_alphabet[morse_char]
 end
