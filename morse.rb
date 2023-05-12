@@ -31,3 +31,9 @@ def decoder(string)
 def self.decode_char(morse_char)
   morse_alphabet[morse_char]
 end
+
+def self.decode_word(morse_word)
+  morse_char = morse_word.split(' ')
+  morse_char.map { |char| decode_char(char) }.join('')
+end
+
