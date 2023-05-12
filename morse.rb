@@ -1,5 +1,5 @@
-def decoder(string)
-  morse_alphabet = {
+class MorseCodeDecoder
+  MORSE_CODE = {
     '.-' => 'A', 
     '-...' => 'B',
     '-.-.' => 'C', 
@@ -29,15 +29,19 @@ def decoder(string)
 } 
 
 def self.decode_char(morse_char)
-  morse_alphabet[morse_char]
+  MORSE_CODE[morse_char]
 end
 
 def self.decode_word(morse_word)
-  morse_char = morse_word.split(' ')
-  morse_char.map { |char| decode_char(char) }.join('')
+  morse_char = morse_word.split('')
+  morse_char.map {|morse_char| decode_char(morse_char)}.join('')
 end
 
-def self.decode_message(string)
-    morse_string = string.split(' ')
-    morse_string.map { |word| decode_word(word) }.join(' ')
+def self.message(message)
+    morse_words = message.split(' ')
+    morse_words.map {|morse_word| decode_word(morse_word)}.join(' ')
 end
+end
+
+message = MorseCodeDecoder.message('.... . .-.. .-.. ---  .-- --- .-. .-.. -..')
+puts message
