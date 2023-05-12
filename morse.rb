@@ -37,3 +37,7 @@ def self.decode_word(morse_word)
   morse_char.map { |char| decode_char(char) }.join('')
 end
 
+def self.decode_message(string)
+    morse_string = string.split(' ')
+    morse_string.map { |word| decode_word(word) }.join(' ')
+end
