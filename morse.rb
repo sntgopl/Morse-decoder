@@ -33,15 +33,15 @@ def self.decode_char(morse_char)
 end
 
 def self.decode_word(morse_word)
-  morse_char = morse_word.split('')
+  morse_char = morse_word.split(' ')
   morse_char.map {|morse_char| decode_char(morse_char)}.join('')
 end
 
 def self.message(message)
-    morse_words = message.split(' ')
+    morse_words = message.split('  ')
     morse_words.map {|morse_word| decode_word(morse_word)}.join(' ')
 end
 end
 
-message = MorseCodeDecoder.message('.... . .-.. .-.. ---  .-- --- .-. .-.. -..')
+message = MorseCodeDecoder.message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
 puts message
