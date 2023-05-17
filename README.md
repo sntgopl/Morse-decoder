@@ -129,16 +129,10 @@ npm run build
 - GitHub: [@sntgopl](https://github.com/sntgopl)
 - LinkedIn: [Santiago Pons Lezica](https://www.linkedin.com/in/spons-lezica7/?originalSubdomain=ar)
 
-👤 **Abraham Christopher**
+👤 **Edgard Soza**
 
-- GitHub: [@Cabraham1](https://github.com/Cabraham1)
-- LinkedIn: [Abraham Christopher](https://www.linkedin.com/in/abrahamchristopher/)
-
-👤 **Kola Kolade**
-
-- GitHub: [@kkolade](https://github.com/kkolade)
-- LinkedIn: [Kola Kolade](https://www.linkedin.com/in/kolakolade/)
-
+- [GitHub](https://github.com/edgardsoza)
+- [LinkedIn](https://www.linkedin.com/in/edgard-soza-sobalvarro/)
 
 <p align="right"><a href="#readme-top">👆</a></p>
 
